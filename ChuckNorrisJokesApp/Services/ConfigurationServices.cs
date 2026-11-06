@@ -13,10 +13,5 @@ namespace ChuckNorrisJokesApp.Services
         {
             ChuckNorrisApiUrl = "https://api.chucknorris.io/jokes/random";
         }
-
-        public Task<string> GetJokesAsync()
-        {
-           
-        }
     }
 }

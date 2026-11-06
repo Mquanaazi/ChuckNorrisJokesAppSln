@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ChuckNorrisJokesApp.Interfaces
 {
-    public interface IChuckNorriesApiService
+    internal interface IPopUp
     {
+        Task ShowingPopUp(string title, string message, string buttonText);
     }
 }

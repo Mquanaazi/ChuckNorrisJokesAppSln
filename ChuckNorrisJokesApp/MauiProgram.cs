@@ -23,9 +23,10 @@ namespace ChuckNorrisJokesApp
     		builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddSingleton<IConfigurationService, ConfigurationServices>();
-            builder.Services.AddSingleton<IChuckNorriesApiService, ChuckNorriesHttpApiService>();
-            
+            builder.Services.AddSingleton<IConfigurationService, ConfigurationService>();
+            builder.Services.AddSingleton<IChuckNorriesHttpApiService, ChuckNorriesHttpApiService>();
+            builder.Services.AddSingleton<IPopUp, MauiPopupService>();
+
             builder.Services.AddTransient<JokesViewModel>();
             builder.Services.AddTransient<JokesView>();
 

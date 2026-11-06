@@ -1,7 +1,6 @@
 ﻿using ChuckNorrisJokesApp.Interfaces;
 using ChuckNorrisJokesApp.Models;
-using Newtonsoft.Json;
-using 
+using Newtonsoft.Json; 
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +9,7 @@ using System.Text.Json.Serialization;
 
 namespace ChuckNorrisJokesApp.Services
 {
-    public class ChuckNorriesHttpApiService : IChuckNorriesApiService
+    public class ChuckNorriesHttpApiService : IChuckNorriesHttpApiService
     {
         private  IConfigurationService _configurationService;
         private HttpClient _httpClient;
@@ -19,8 +18,6 @@ namespace ChuckNorrisJokesApp.Services
             _configurationService = configurationService;
 
             _httpClient = new HttpClient();
-
-
 
         }
         public async Task<string> GetJokeAsync()
@@ -46,7 +43,6 @@ namespace ChuckNorrisJokesApp.Services
             return null;
 
         }
-
 
 
     }

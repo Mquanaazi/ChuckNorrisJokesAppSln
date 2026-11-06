@@ -5,8 +5,9 @@
              Title="JokesView">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text = "{Binding ChuckNorrisJoke}"/>
+        <Button
+            Text="Get Joke"
+            Command="{Binding GetJokeCommand}"/>
     </VerticalStackLayout>
 </ContentPage>
