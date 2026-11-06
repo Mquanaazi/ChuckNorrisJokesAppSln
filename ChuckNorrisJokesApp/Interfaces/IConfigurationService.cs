@@ -6,5 +6,8 @@ namespace ChuckNorrisJokesApp.Interfaces
 {
     public interface IConfigurationService 
     {
+        //string ChuckNorrisApiUrl { get; }
+
+        Task<string> GetJokesAsync();
     }
 }

@@ -2,5 +2,6 @@
 {
     internal interface IChuckNorriesHttpApiService
     {
+        string ChuckNorrisApiUrl { get; }
     }
 }
